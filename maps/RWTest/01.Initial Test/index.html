@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>CRS.Simple example - Leaflet</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+	<link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+	<script src="https://npmcdn.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+
+	<style>
+		#map {
+			width:1800px;
+			height:900px;
+		}
+	</style>
+	
+</head>
+<body>
+
+<div id='map'></div>
+
+<script>
+
+	var map = L.map('map', {
+		crs: L.CRS.Simple,
+		minZoom: -3
+	});
+
+	var yx = L.latLng;
+
+	var xy = function(x, y) {
+		if (L.Util.isArray(x)) {    // When doing xy([x, y]);
+			return yx(x[1], x[0]);
+		}
+		return yx(y, x);  // When doing xy(x, y);
+	};
+var bounds1 = [xy(16, 9), xy(32, 18)];
+var image = L.imageOverlay('images/screenshot00001(1,1).jpg', bounds1).addTo(map);
+var bounds2 = [xy(32, 9), xy(48, 18)];
+var image = L.imageOverlay('images/screenshot00002(2,1).jpg', bounds2).addTo(map);
+var bounds3 = [xy(48, 9), xy(64, 18)];
+var image = L.imageOverlay('images/screenshot00003(3,1).jpg', bounds3).addTo(map);
+var bounds4 = [xy(64, 9), xy(80, 18)];
+var image = L.imageOverlay('images/screenshot00004(4,1).jpg', bounds4).addTo(map);
+var bounds5 = [xy(80, 9), xy(96, 18)];
+var image = L.imageOverlay('images/screenshot00005(5,1).jpg', bounds5).addTo(map);
+var bounds6 = [xy(96, 9), xy(112, 18)];
+var image = L.imageOverlay('images/screenshot00006(6,1).jpg', bounds6).addTo(map);
+var bounds7 = [xy(112, 9), xy(128, 18)];
+var image = L.imageOverlay('images/screenshot00007(7,1).jpg', bounds7).addTo(map);
+var bounds8 = [xy(128, 9), xy(144, 18)];
+var image = L.imageOverlay('images/screenshot00008(8,1).jpg', bounds8).addTo(map);
+var bounds9 = [xy(144, 9), xy(160, 18)];
+var image = L.imageOverlay('images/screenshot00009(9,1).jpg', bounds9).addTo(map);
+var bounds10 = [xy(16, 18), xy(32, 27)];
+var image = L.imageOverlay('images/screenshot00010(1,2).jpg', bounds10).addTo(map);
+var bounds11 = [xy(32, 18), xy(48, 27)];
+var image = L.imageOverlay('images/screenshot00011(2,2).jpg', bounds11).addTo(map);
+var bounds12 = [xy(48, 18), xy(64, 27)];
+var image = L.imageOverlay('images/screenshot00012(3,2).jpg', bounds12).addTo(map);
+var bounds13 = [xy(64, 18), xy(80, 27)];
+var image = L.imageOverlay('images/screenshot00013(4,2).jpg', bounds13).addTo(map);
+var bounds14 = [xy(80, 18), xy(96, 27)];
+var image = L.imageOverlay('images/screenshot00014(5,2).jpg', bounds14).addTo(map);
+var bounds15 = [xy(96, 18), xy(112, 27)];
+var image = L.imageOverlay('images/screenshot00015(6,2).jpg', bounds15).addTo(map);
+var bounds16 = [xy(112, 18), xy(128, 27)];
+var image = L.imageOverlay('images/screenshot00016(7,2).jpg', bounds16).addTo(map);
+var bounds17 = [xy(128, 18), xy(144, 27)];
+var image = L.imageOverlay('images/screenshot00017(8,2).jpg', bounds17).addTo(map);
+var bounds18 = [xy(144, 18), xy(160, 27)];
+var image = L.imageOverlay('images/screenshot00018(9,2).jpg', bounds18).addTo(map);
+var bounds19 = [xy(16, 27), xy(32, 36)];
+var image = L.imageOverlay('images/screenshot00019(1,3).jpg', bounds19).addTo(map);
+var bounds20 = [xy(32, 27), xy(48, 36)];
+var image = L.imageOverlay('images/screenshot00020(2,3).jpg', bounds20).addTo(map);
+var bounds21 = [xy(48, 27), xy(64, 36)];
+var image = L.imageOverlay('images/screenshot00021(3,3).jpg', bounds21).addTo(map);
+var bounds22 = [xy(64, 27), xy(80, 36)];
+var image = L.imageOverlay('images/screenshot00022(4,3).jpg', bounds22).addTo(map);
+var bounds23 = [xy(80, 27), xy(96, 36)];
+var image = L.imageOverlay('images/screenshot00023(5,3).jpg', bounds23).addTo(map);
+var bounds24 = [xy(96, 27), xy(112, 36)];
+var image = L.imageOverlay('images/screenshot00024(6,3).jpg', bounds24).addTo(map);
+var bounds25 = [xy(112, 27), xy(128, 36)];
+var image = L.imageOverlay('images/screenshot00025(7,3).jpg', bounds25).addTo(map);
+var bounds26 = [xy(128, 27), xy(144, 36)];
+var image = L.imageOverlay('images/screenshot00026(8,3).jpg', bounds26).addTo(map);
+var bounds27 = [xy(144, 27), xy(160, 36)];
+var image = L.imageOverlay('images/screenshot00027(9,3).jpg', bounds27).addTo(map);
+var bounds28 = [xy(16, 36), xy(32, 45)];
+var image = L.imageOverlay('images/screenshot00028(1,4).jpg', bounds28).addTo(map);
+var bounds29 = [xy(32, 36), xy(48, 45)];
+var image = L.imageOverlay('images/screenshot00029(2,4).jpg', bounds29).addTo(map);
+var bounds30 = [xy(48, 36), xy(64, 45)];
+var image = L.imageOverlay('images/screenshot00030(3,4).jpg', bounds30).addTo(map);
+var bounds31 = [xy(64, 36), xy(80, 45)];
+var image = L.imageOverlay('images/screenshot00031(4,4).jpg', bounds31).addTo(map);
+var bounds32 = [xy(80, 36), xy(96, 45)];
+var image = L.imageOverlay('images/screenshot00032(5,4).jpg', bounds32).addTo(map);
+var bounds33 = [xy(96, 36), xy(112, 45)];
+var image = L.imageOverlay('images/screenshot00033(6,4).jpg', bounds33).addTo(map);
+var bounds34 = [xy(112, 36), xy(128, 45)];
+var image = L.imageOverlay('images/screenshot00034(7,4).jpg', bounds34).addTo(map);
+var bounds35 = [xy(128, 36), xy(144, 45)];
+var image = L.imageOverlay('images/screenshot00035(8,4).jpg', bounds35).addTo(map);
+var bounds36 = [xy(144, 36), xy(160, 45)];
+var image = L.imageOverlay('images/screenshot00036(9,4).jpg', bounds36).addTo(map);
+var bounds37 = [xy(16, 45), xy(32, 54)];
+var image = L.imageOverlay('images/screenshot00037(1,5).jpg', bounds37).addTo(map);
+var bounds38 = [xy(32, 45), xy(48, 54)];
+var image = L.imageOverlay('images/screenshot00038(2,5).jpg', bounds38).addTo(map);
+var bounds39 = [xy(48, 45), xy(64, 54)];
+var image = L.imageOverlay('images/screenshot00039(3,5).jpg', bounds39).addTo(map);
+var bounds40 = [xy(64, 45), xy(80, 54)];
+var image = L.imageOverlay('images/screenshot00040(4,5).jpg', bounds40).addTo(map);
+var bounds41 = [xy(80, 45), xy(96, 54)];
+var image = L.imageOverlay('images/screenshot00041(5,5).jpg', bounds41).addTo(map);
+var bounds42 = [xy(96, 45), xy(112, 54)];
+var image = L.imageOverlay('images/screenshot00042(6,5).jpg', bounds42).addTo(map);
+var bounds43 = [xy(112, 45), xy(128, 54)];
+var image = L.imageOverlay('images/screenshot00043(7,5).jpg', bounds43).addTo(map);
+var bounds44 = [xy(128, 45), xy(144, 54)];
+var image = L.imageOverlay('images/screenshot00044(8,5).jpg', bounds44).addTo(map);
+var bounds45 = [xy(144, 45), xy(160, 54)];
+var image = L.imageOverlay('images/screenshot00045(9,5).jpg', bounds45).addTo(map);
+var bounds46 = [xy(16, 54), xy(32, 63)];
+var image = L.imageOverlay('images/screenshot00046(1,6).jpg', bounds46).addTo(map);
+var bounds47 = [xy(32, 54), xy(48, 63)];
+var image = L.imageOverlay('images/screenshot00047(2,6).jpg', bounds47).addTo(map);
+var bounds48 = [xy(48, 54), xy(64, 63)];
+var image = L.imageOverlay('images/screenshot00048(3,6).jpg', bounds48).addTo(map);
+var bounds49 = [xy(64, 54), xy(80, 63)];
+var image = L.imageOverlay('images/screenshot00049(4,6).jpg', bounds49).addTo(map);
+var bounds50 = [xy(80, 54), xy(96, 63)];
+var image = L.imageOverlay('images/screenshot00050(5,6).jpg', bounds50).addTo(map);
+var bounds51 = [xy(96, 54), xy(112, 63)];
+var image = L.imageOverlay('images/screenshot00051(6,6).jpg', bounds51).addTo(map);
+var bounds52 = [xy(112, 54), xy(128, 63)];
+var image = L.imageOverlay('images/screenshot00052(7,6).jpg', bounds52).addTo(map);
+var bounds53 = [xy(128, 54), xy(144, 63)];
+var image = L.imageOverlay('images/screenshot00053(8,6).jpg', bounds53).addTo(map);
+var bounds54 = [xy(144, 54), xy(160, 63)];
+var image = L.imageOverlay('images/screenshot00054(9,6).jpg', bounds54).addTo(map);
+var bounds55 = [xy(16, 63), xy(32, 72)];
+var image = L.imageOverlay('images/screenshot00055(1,7).jpg', bounds55).addTo(map);
+var bounds56 = [xy(32, 63), xy(48, 72)];
+var image = L.imageOverlay('images/screenshot00056(2,7).jpg', bounds56).addTo(map);
+var bounds57 = [xy(48, 63), xy(64, 72)];
+var image = L.imageOverlay('images/screenshot00057(3,7).jpg', bounds57).addTo(map);
+var bounds58 = [xy(64, 63), xy(80, 72)];
+var image = L.imageOverlay('images/screenshot00058(4,7).jpg', bounds58).addTo(map);
+var bounds59 = [xy(80, 63), xy(96, 72)];
+var image = L.imageOverlay('images/screenshot00059(5,7).jpg', bounds59).addTo(map);
+var bounds60 = [xy(96, 63), xy(112, 72)];
+var image = L.imageOverlay('images/screenshot00060(6,7).jpg', bounds60).addTo(map);
+var bounds61 = [xy(112, 63), xy(128, 72)];
+var image = L.imageOverlay('images/screenshot00061(7,7).jpg', bounds61).addTo(map);
+var bounds62 = [xy(128, 63), xy(144, 72)];
+var image = L.imageOverlay('images/screenshot00062(8,7).jpg', bounds62).addTo(map);
+var bounds63 = [xy(144, 63), xy(160, 72)];
+var image = L.imageOverlay('images/screenshot00063(9,7).jpg', bounds63).addTo(map);
+var bounds64 = [xy(16, 72), xy(32, 81)];
+var image = L.imageOverlay('images/screenshot00064(1,8).jpg', bounds64).addTo(map);
+var bounds65 = [xy(32, 72), xy(48, 81)];
+var image = L.imageOverlay('images/screenshot00065(2,8).jpg', bounds65).addTo(map);
+var bounds66 = [xy(48, 72), xy(64, 81)];
+var image = L.imageOverlay('images/screenshot00066(3,8).jpg', bounds66).addTo(map);
+var bounds67 = [xy(64, 72), xy(80, 81)];
+var image = L.imageOverlay('images/screenshot00067(4,8).jpg', bounds67).addTo(map);
+var bounds68 = [xy(80, 72), xy(96, 81)];
+var image = L.imageOverlay('images/screenshot00068(5,8).jpg', bounds68).addTo(map);
+var bounds69 = [xy(96, 72), xy(112, 81)];
+var image = L.imageOverlay('images/screenshot00069(6,8).jpg', bounds69).addTo(map);
+var bounds70 = [xy(112, 72), xy(128, 81)];
+var image = L.imageOverlay('images/screenshot00070(7,8).jpg', bounds70).addTo(map);
+var bounds71 = [xy(128, 72), xy(144, 81)];
+var image = L.imageOverlay('images/screenshot00071(8,8).jpg', bounds71).addTo(map);
+var bounds72 = [xy(144, 72), xy(160, 81)];
+var image = L.imageOverlay('images/screenshot00072(9,8).jpg', bounds72).addTo(map);
+var bounds73 = [xy(16, 81), xy(32, 90)];
+var image = L.imageOverlay('images/screenshot00073(1,9).jpg', bounds73).addTo(map);
+var bounds74 = [xy(32, 81), xy(48, 90)];
+var image = L.imageOverlay('images/screenshot00074(2,9).jpg', bounds74).addTo(map);
+var bounds75 = [xy(48, 81), xy(64, 90)];
+var image = L.imageOverlay('images/screenshot00075(3,9).jpg', bounds75).addTo(map);
+var bounds76 = [xy(64, 81), xy(80, 90)];
+var image = L.imageOverlay('images/screenshot00076(4,9).jpg', bounds76).addTo(map);
+var bounds77 = [xy(80, 81), xy(96, 90)];
+var image = L.imageOverlay('images/screenshot00077(5,9).jpg', bounds77).addTo(map);
+var bounds78 = [xy(96, 81), xy(112, 90)];
+var image = L.imageOverlay('images/screenshot00078(6,9).jpg', bounds78).addTo(map);
+var bounds79 = [xy(112, 81), xy(128, 90)];
+var image = L.imageOverlay('images/screenshot00079(7,9).jpg', bounds79).addTo(map);
+var bounds80 = [xy(128, 81), xy(144, 90)];
+var image = L.imageOverlay('images/screenshot00080(8,9).jpg', bounds80).addTo(map);
+var bounds81 = [xy(144, 81), xy(160, 90)];
+var image = L.imageOverlay('images/screenshot00081(9,9).jpg', bounds81).addTo(map);
+var bounds82 = [xy(16, 90), xy(32, 99)];
+var image = L.imageOverlay('images/screenshot00082(1,10).jpg', bounds82).addTo(map);
+var bounds83 = [xy(32, 90), xy(48, 99)];
+var image = L.imageOverlay('images/screenshot00083(2,10).jpg', bounds83).addTo(map);
+var bounds84 = [xy(48, 90), xy(64, 99)];
+var image = L.imageOverlay('images/screenshot00084(3,10).jpg', bounds84).addTo(map);
+var bounds85 = [xy(64, 90), xy(80, 99)];
+var image = L.imageOverlay('images/screenshot00085(4,10).jpg', bounds85).addTo(map);
+var bounds86 = [xy(80, 90), xy(96, 99)];
+var image = L.imageOverlay('images/screenshot00086(5,10).jpg', bounds86).addTo(map);
+var bounds87 = [xy(96, 90), xy(112, 99)];
+var image = L.imageOverlay('images/screenshot00087(6,10).jpg', bounds87).addTo(map);
+var bounds88 = [xy(112, 90), xy(128, 99)];
+var image = L.imageOverlay('images/screenshot00088(7,10).jpg', bounds88).addTo(map);
+var bounds89 = [xy(128, 90), xy(144, 99)];
+var image = L.imageOverlay('images/screenshot00089(8,10).jpg', bounds89).addTo(map);
+var bounds90 = [xy(144, 90), xy(160, 99)];
+var image = L.imageOverlay('images/screenshot00090(9,10).jpg', bounds90).addTo(map);
+var bounds91 = [xy(16, 99), xy(32, 108)];
+var image = L.imageOverlay('images/screenshot00091(1,11).jpg', bounds91).addTo(map);
+var bounds92 = [xy(32, 99), xy(48, 108)];
+var image = L.imageOverlay('images/screenshot00092(2,11).jpg', bounds92).addTo(map);
+var bounds93 = [xy(48, 99), xy(64, 108)];
+var image = L.imageOverlay('images/screenshot00093(3,11).jpg', bounds93).addTo(map);
+var bounds94 = [xy(64, 99), xy(80, 108)];
+var image = L.imageOverlay('images/screenshot00094(4,11).jpg', bounds94).addTo(map);
+var bounds95 = [xy(80, 99), xy(96, 108)];
+var image = L.imageOverlay('images/screenshot00095(5,11).jpg', bounds95).addTo(map);
+var bounds96 = [xy(96, 99), xy(112, 108)];
+var image = L.imageOverlay('images/screenshot00096(6,11).jpg', bounds96).addTo(map);
+var bounds97 = [xy(112, 99), xy(128, 108)];
+var image = L.imageOverlay('images/screenshot00097(7,11).jpg', bounds97).addTo(map);
+var bounds98 = [xy(128, 99), xy(144, 108)];
+var image = L.imageOverlay('images/screenshot00098(8,11).jpg', bounds98).addTo(map);
+var bounds99 = [xy(144, 99), xy(160, 108)];
+var image = L.imageOverlay('images/screenshot00099(9,11).jpg', bounds99).addTo(map);
+var bounds100 = [xy(16, 108), xy(32, 117)];
+var image = L.imageOverlay('images/screenshot00100(1,12).jpg', bounds100).addTo(map);
+var bounds101 = [xy(32, 108), xy(48, 117)];
+var image = L.imageOverlay('images/screenshot00101(2,12).jpg', bounds101).addTo(map);
+var bounds102 = [xy(48, 108), xy(64, 117)];
+var image = L.imageOverlay('images/screenshot00102(3,12).jpg', bounds102).addTo(map);
+var bounds103 = [xy(64, 108), xy(80, 117)];
+var image = L.imageOverlay('images/screenshot00103(4,12).jpg', bounds103).addTo(map);
+var bounds104 = [xy(80, 108), xy(96, 117)];
+var image = L.imageOverlay('images/screenshot00104(5,12).jpg', bounds104).addTo(map);
+var bounds105 = [xy(96, 108), xy(112, 117)];
+var image = L.imageOverlay('images/screenshot00105(6,12).jpg', bounds105).addTo(map);
+var bounds106 = [xy(112, 108), xy(128, 117)];
+var image = L.imageOverlay('images/screenshot00106(7,12).jpg', bounds106).addTo(map);
+var bounds107 = [xy(128, 108), xy(144, 117)];
+var image = L.imageOverlay('images/screenshot00107(8,12).jpg', bounds107).addTo(map);
+var bounds108 = [xy(144, 108), xy(160, 117)];
+var image = L.imageOverlay('images/screenshot00108(9,12).jpg', bounds108).addTo(map);
+var bounds109 = [xy(16, 117), xy(32, 126)];
+var image = L.imageOverlay('images/screenshot00109(1,13).jpg', bounds109).addTo(map);
+var bounds110 = [xy(32, 117), xy(48, 126)];
+var image = L.imageOverlay('images/screenshot00110(2,13).jpg', bounds110).addTo(map);
+var bounds111 = [xy(48, 117), xy(64, 126)];
+var image = L.imageOverlay('images/screenshot00111(3,13).jpg', bounds111).addTo(map);
+var bounds112 = [xy(64, 117), xy(80, 126)];
+var image = L.imageOverlay('images/screenshot00112(4,13).jpg', bounds112).addTo(map);
+var bounds113 = [xy(80, 117), xy(96, 126)];
+var image = L.imageOverlay('images/screenshot00113(5,13).jpg', bounds113).addTo(map);
+var bounds114 = [xy(96, 117), xy(112, 126)];
+var image = L.imageOverlay('images/screenshot00114(6,13).jpg', bounds114).addTo(map);
+var bounds115 = [xy(112, 117), xy(128, 126)];
+var image = L.imageOverlay('images/screenshot00115(7,13).jpg', bounds115).addTo(map);
+var bounds116 = [xy(128, 117), xy(144, 126)];
+var image = L.imageOverlay('images/screenshot00116(8,13).jpg', bounds116).addTo(map);
+var bounds117 = [xy(144, 117), xy(160, 126)];
+var image = L.imageOverlay('images/screenshot00117(9,13).jpg', bounds117).addTo(map);
+var bounds118 = [xy(16, 126), xy(32, 135)];
+var image = L.imageOverlay('images/screenshot00118(1,14).jpg', bounds118).addTo(map);
+var bounds119 = [xy(32, 126), xy(48, 135)];
+var image = L.imageOverlay('images/screenshot00119(2,14).jpg', bounds119).addTo(map);
+var bounds120 = [xy(48, 126), xy(64, 135)];
+var image = L.imageOverlay('images/screenshot00120(3,14).jpg', bounds120).addTo(map);
+var bounds121 = [xy(64, 126), xy(80, 135)];
+var image = L.imageOverlay('images/screenshot00121(4,14).jpg', bounds121).addTo(map);
+var bounds122 = [xy(80, 126), xy(96, 135)];
+var image = L.imageOverlay('images/screenshot00122(5,14).jpg', bounds122).addTo(map);
+var bounds123 = [xy(96, 126), xy(112, 135)];
+var image = L.imageOverlay('images/screenshot00123(6,14).jpg', bounds123).addTo(map);
+var bounds124 = [xy(112, 126), xy(128, 135)];
+var image = L.imageOverlay('images/screenshot00124(7,14).jpg', bounds124).addTo(map);
+var bounds125 = [xy(128, 126), xy(144, 135)];
+var image = L.imageOverlay('images/screenshot00125(8,14).jpg', bounds125).addTo(map);
+var bounds126 = [xy(144, 126), xy(160, 135)];
+var image = L.imageOverlay('images/screenshot00126(9,14).jpg', bounds126).addTo(map);
+var bounds127 = [xy(16, 135), xy(32, 144)];
+var image = L.imageOverlay('images/screenshot00127(1,15).jpg', bounds127).addTo(map);
+var bounds128 = [xy(32, 135), xy(48, 144)];
+var image = L.imageOverlay('images/screenshot00128(2,15).jpg', bounds128).addTo(map);
+var bounds129 = [xy(48, 135), xy(64, 144)];
+var image = L.imageOverlay('images/screenshot00129(3,15).jpg', bounds129).addTo(map);
+var bounds130 = [xy(64, 135), xy(80, 144)];
+var image = L.imageOverlay('images/screenshot00130(4,15).jpg', bounds130).addTo(map);
+var bounds131 = [xy(80, 135), xy(96, 144)];
+var image = L.imageOverlay('images/screenshot00131(5,15).jpg', bounds131).addTo(map);
+var bounds132 = [xy(96, 135), xy(112, 144)];
+var image = L.imageOverlay('images/screenshot00132(6,15).jpg', bounds132).addTo(map);
+var bounds133 = [xy(112, 135), xy(128, 144)];
+var image = L.imageOverlay('images/screenshot00133(7,15).jpg', bounds133).addTo(map);
+var bounds134 = [xy(128, 135), xy(144, 144)];
+var image = L.imageOverlay('images/screenshot00134(8,15).jpg', bounds134).addTo(map);
+var bounds135 = [xy(144, 135), xy(160, 144)];
+var image = L.imageOverlay('images/screenshot00135(9,15).jpg', bounds135).addTo(map);
+var bounds136 = [xy(16, 144), xy(32, 153)];
+var image = L.imageOverlay('images/screenshot00136(1,16).jpg', bounds136).addTo(map);
+var bounds137 = [xy(32, 144), xy(48, 153)];
+var image = L.imageOverlay('images/screenshot00137(2,16).jpg', bounds137).addTo(map);
+var bounds138 = [xy(48, 144), xy(64, 153)];
+var image = L.imageOverlay('images/screenshot00138(3,16).jpg', bounds138).addTo(map);
+var bounds139 = [xy(64, 144), xy(80, 153)];
+var image = L.imageOverlay('images/screenshot00139(4,16).jpg', bounds139).addTo(map);
+var bounds140 = [xy(80, 144), xy(96, 153)];
+var image = L.imageOverlay('images/screenshot00140(5,16).jpg', bounds140).addTo(map);
+var bounds141 = [xy(96, 144), xy(112, 153)];
+var image = L.imageOverlay('images/screenshot00141(6,16).jpg', bounds141).addTo(map);
+var bounds142 = [xy(112, 144), xy(128, 153)];
+var image = L.imageOverlay('images/screenshot00142(7,16).jpg', bounds142).addTo(map);
+var bounds143 = [xy(128, 144), xy(144, 153)];
+var image = L.imageOverlay('images/screenshot00143(8,16).jpg', bounds143).addTo(map);
+var bounds144 = [xy(144, 144), xy(160, 153)];
+var image = L.imageOverlay('images/screenshot00144(9,16).jpg', bounds144).addTo(map);
+
+
+
+	map.setView(xy(120, 70), 1);
+
+</script>
+
+
+
+</body>
+</html>
